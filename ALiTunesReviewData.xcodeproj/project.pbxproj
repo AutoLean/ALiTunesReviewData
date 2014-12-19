@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA299BE63AB62FE6AA662CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC98B1E819038C8BB8E6ECD0 /* libPods.a */; };
 		D320E88C1A44AC67002D9CD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D320E88B1A44AC67002D9CD0 /* main.m */; };
 		D320E88F1A44AC67002D9CD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D320E88E1A44AC67002D9CD0 /* AppDelegate.m */; };
 		D320E8921A44AC67002D9CD0 /* ALiTunesReviewData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D320E8901A44AC67002D9CD0 /* ALiTunesReviewData.xcdatamodeld */; };
@@ -15,6 +16,7 @@
 		D320E89A1A44AC67002D9CD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D320E8991A44AC67002D9CD0 /* Images.xcassets */; };
 		D320E89D1A44AC67002D9CD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D320E89B1A44AC67002D9CD0 /* LaunchScreen.xib */; };
 		D320E8A91A44AC67002D9CD0 /* ALiTunesReviewDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D320E8A81A44AC67002D9CD0 /* ALiTunesReviewDataTests.m */; };
+		D320E8B81A44B139002D9CD0 /* ALiTunesReviewDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D320E8B71A44B139002D9CD0 /* ALiTunesReviewDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15D91C97941ACE0B1E6A0D37 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D320E8861A44AC67002D9CD0 /* ALiTunesReviewData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALiTunesReviewData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D320E88A1A44AC67002D9CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D320E88B1A44AC67002D9CD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +45,10 @@
 		D320E8A21A44AC67002D9CD0 /* ALiTunesReviewDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALiTunesReviewDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D320E8A71A44AC67002D9CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D320E8A81A44AC67002D9CD0 /* ALiTunesReviewDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALiTunesReviewDataTests.m; sourceTree = "<group>"; };
+		D320E8B61A44B139002D9CD0 /* ALiTunesReviewDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALiTunesReviewDataManager.h; path = Classes/ALiTunesReviewDataManager.h; sourceTree = "<group>"; };
+		D320E8B71A44B139002D9CD0 /* ALiTunesReviewDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALiTunesReviewDataManager.m; path = Classes/ALiTunesReviewDataManager.m; sourceTree = "<group>"; };
+		F3B59D717ACA26A7A56E413F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FC98B1E819038C8BB8E6ECD0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA299BE63AB62FE6AA662CE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7329E08C2C735B2718EA263E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC98B1E819038C8BB8E6ECD0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A28C3664F349D53B097D3D9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15D91C97941ACE0B1E6A0D37 /* Pods.debug.xcconfig */,
+				F3B59D717ACA26A7A56E413F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D320E87D1A44AC67002D9CD0 = {
 			isa = PBXGroup;
 			children = (
 				D320E8881A44AC67002D9CD0 /* ALiTunesReviewData */,
 				D320E8A51A44AC67002D9CD0 /* ALiTunesReviewDataTests */,
 				D320E8871A44AC67002D9CD0 /* Products */,
+				A28C3664F349D53B097D3D9C /* Pods */,
+				7329E08C2C735B2718EA263E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +118,7 @@
 				D320E8991A44AC67002D9CD0 /* Images.xcassets */,
 				D320E89B1A44AC67002D9CD0 /* LaunchScreen.xib */,
 				D320E8901A44AC67002D9CD0 /* ALiTunesReviewData.xcdatamodeld */,
+				D320E8B51A44B117002D9CD0 /* Classes */,
 				D320E8891A44AC67002D9CD0 /* Supporting Files */,
 			);
 			path = ALiTunesReviewData;
@@ -122,6 +150,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D320E8B51A44B117002D9CD0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D320E8B61A44B139002D9CD0 /* ALiTunesReviewDataManager.h */,
+				D320E8B71A44B139002D9CD0 /* ALiTunesReviewDataManager.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D320E8AC1A44AC67002D9CD0 /* Build configuration list for PBXNativeTarget "ALiTunesReviewData" */;
 			buildPhases = (
+				E210D4E49C9AE37F36A9BC9F /* Check Pods Manifest.lock */,
 				D320E8821A44AC67002D9CD0 /* Sources */,
 				D320E8831A44AC67002D9CD0 /* Frameworks */,
 				D320E8841A44AC67002D9CD0 /* Resources */,
+				4F2812A06C986D8442927AA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,12 +256,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F2812A06C986D8442927AA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E210D4E49C9AE37F36A9BC9F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D320E8821A44AC67002D9CD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D320E8921A44AC67002D9CD0 /* ALiTunesReviewData.xcdatamodeld in Sources */,
+				D320E8B81A44B139002D9CD0 /* ALiTunesReviewDataManager.m in Sources */,
 				D320E88F1A44AC67002D9CD0 /* AppDelegate.m in Sources */,
 				D320E8951A44AC67002D9CD0 /* ViewController.m in Sources */,
 				D320E88C1A44AC67002D9CD0 /* main.m in Sources */,
@@ -347,6 +420,7 @@
 		};
 		D320E8AD1A44AC67002D9CD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D91C97941ACE0B1E6A0D37 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ALiTunesReviewData/Info.plist;
@@ -357,6 +431,7 @@
 		};
 		D320E8AE1A44AC67002D9CD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B59D717ACA26A7A56E413F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ALiTunesReviewData/Info.plist;
@@ -418,6 +493,7 @@
 				D320E8AE1A44AC67002D9CD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D320E8AF1A44AC67002D9CD0 /* Build configuration list for PBXNativeTarget "ALiTunesReviewDataTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +502,7 @@
 				D320E8B11A44AC67002D9CD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

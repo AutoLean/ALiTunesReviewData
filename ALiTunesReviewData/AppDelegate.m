@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ALiTunesReviewDataManager.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+        //   Example of using the parameters
+    NSDictionary *parameters = [NSDictionary new];
+        //   parameters = @{@"limit":@"200"};
+    
+    ALiTunesReviewDataManager *manager = [ALiTunesReviewDataManager manager];
+    [manager searchReviewsWithCountryCode:@"US" applicationID:@"535811906" parameters:parameters complete:^(id result, NSError *error) {
+        NSLog(@"%@", result);
+    }];
+    
     // Override point for customization after application launch.
     return YES;
 }
